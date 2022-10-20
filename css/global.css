@@ -8,12 +8,28 @@ body {
     background-color: #F5F6FA !important;
 }
 
+h1 {
+    color: #7EABD4;
+}
+
 .nav-item>a {
-    color: #000;
+    color: #7EABD4;
 }
 
 .carousel img {
     height: 90vh;
+}
+
+section.header {
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+.text-about {
+    margin-bottom: 40px;
 }
 
 .plan-imagens img {
@@ -57,10 +73,10 @@ body {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #5c9df0 !important;
-    width: 12px !important;
-    height: 1vh !important;
-    border-radius: 50%;
+    background-color: #7EABD4 !important;
+    /* width: 12px !important; */
+    /* height: 1vh !important; */
+    /* border-radius: 50%; */
 }
 
 .carousel-indicators {
@@ -75,6 +91,34 @@ body {
     margin-bottom: 20px;
 }
 
+.specialty-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.specialty-images img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 20px;
+    filter: brightness(73%) contrast(100%) saturate(56%) blur(0px) hue-rotate(0deg);
+    cursor: pointer;
+}
+
+.specialty-images img:hover {
+    filter: none;
+
+}
+
+.specialty-images label {
+    display: block;
+}
+
+.specialty-images label {
+    color: #7EABD4;
+}
+
 @media only screen and (max-width: 768px) {
     #navbarNav .nav {
         display: flex;
@@ -83,6 +127,21 @@ body {
         margin-top: 10px;
     }
 
+    section.header {
+        margin-bottom: 0;
+    }
+
+    section {
+        margin-bottom: 60px;
+    }
+
+    .text-about {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
     .plan-descripton {
         text-align: center;
     }
