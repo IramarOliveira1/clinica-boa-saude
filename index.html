@@ -74,8 +74,8 @@
                     <p>Nossa missão é te ajudar a escolher a melhor opção entre as operadoras de planos de
                         saúde para que você possa tomar a melhor decisão na hora de contratar.
                     </p>
-                    <div class="button-contact">
-                        <button class="btn btn-success" onclick="teste">ENTRE EM CONTATO COM A GENTE</button>
+                    <div class="button-contact-plan">
+                        <button class="btn btn-success">ENTRE EM CONTATO COM A GENTE</button>
                     </div>
                 </div>
                 <div class="plan-imagens">
@@ -117,24 +117,21 @@
             </div>
         </section>
         <section class="specialty">
-            <div class="specialty-title mb-5-">
+            <div class="specialty-title mb-5">
                 <h1>ESPECIALIDADES</h1>
             </div>
             <div class="specialty-images">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <img src="images/cardiologia.webp"
-                            alt="Cardiologia">
+                        <img src="images/cardiologia.webp" alt="Cardiologia">
                         <label for="">Cardiologia</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/angiologia.webp"
-                            alt="Angiologia">
+                        <img src="/images/angiologia.webp" alt="Angiologia">
                         <label for="">Angiologia</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/foto_nutricao.webp"
-                            alt="Nutrição">
+                        <img src="/images/foto_nutricao.webp" alt="Nutrição">
                         <label for="">Nutrição</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -143,20 +140,20 @@
                         <label for="">Arritmologia e Avaliação de Marcapasso</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/clinica_medica.webp"
-                            alt="Clínica Médica">
+                        <img src="/images/clinica_medica.webp" alt="Clínica Médica">
                         <label for="">Clínica Médica</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/endocrinologia.webp"
-                            alt="Endocrinologia">
+                        <img src="/images/endocrinologia.webp" alt="Endocrinologia">
                         <label for="">Endocrinologia</label>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about">
-            <h1>SOBRE NÓS</h1>
+            <div class="about-title mb-5">
+                <h1>SOBRE NÓS</h1>
+            </div>
             <div class="text-about">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum rerum illo inventore ipsa
@@ -216,11 +213,51 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact-title mb-5">
+                <h1>Contato</h1>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="col-lg-12 col-xl-11">
+                        <h1>ENVIE SUA MENSAGEM</h1>
+                        <p>
+                            Para tirar dúvidas, dar sugestões ou obter mais informações sobre a Clínica Boa Saúde,
+                            preencha o formulário.
+                        </p>
+                        <div class="contact-divider">
+                        </div>
+                        <strong>MARQUE SUA CONSULTA!</strong>
+                        <div class="button-contact mt-4">
+                            <button class="btn btn-success w-100">
+                                <box-icon type='logo' color="#fff" class="whatsapp" name='whatsapp'></box-icon>(71) 99999-9999
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="col-md-12">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Nome" required>
+                            <input type="text" class="form-control" placeholder="Telefone" required>
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Mensagem" required></textarea>
+                            <button class="btn btn-primary w-100">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </body>
 
 </html>

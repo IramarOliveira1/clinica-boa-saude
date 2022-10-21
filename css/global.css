@@ -17,7 +17,7 @@ h1 {
 }
 
 .carousel img {
-    height: 90vh;
+    height: 100vh;
 }
 
 section.header {
@@ -74,16 +74,13 @@ section {
 
 .carousel-indicators [data-bs-target] {
     background-color: #7EABD4 !important;
-    /* width: 12px !important; */
-    /* height: 1vh !important; */
-    /* border-radius: 50%; */
 }
 
 .carousel-indicators {
     top: 98%;
 }
 
-.plan .button-contact button {
+.plan .button-contact-plan button {
     background-color: #2da947;
     padding: 15px 30px;
     font-weight: 600;
@@ -119,6 +116,64 @@ section {
     color: #7EABD4;
 }
 
+.contact-info {
+    text-align: left;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form input {
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h1 {
+    color: #4d555c;
+    font-weight: 600;
+}
+
+.contact-info {
+    color: #4d555c;
+    margin: 10px 0
+}
+
+.contact-divider {
+    background-color: #7EABD4;
+    width: 15%;
+    padding: 3px 0;
+    margin: 20px 0;
+}
+
+.contact button {
+    padding: 15px 30px;
+    font-weight: 600;
+    border: none;
+}
+
+.contact .button-contact button {
+    position: relative;
+    background-color: #2da947;
+}
+
+.contact .contact-form button {
+    background-color: #3483fa;
+}
+
+.button-contact .whatsapp {
+    position: absolute;
+    left: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     #navbarNav .nav {
         display: flex;
@@ -142,7 +197,12 @@ section {
 }
 
 @media only screen and (max-width: 1200px) {
-    .plan-descripton {
-        text-align: center;
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .button-contact button {
+        margin-bottom: 10px;
     }
 }
