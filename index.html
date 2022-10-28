@@ -13,10 +13,12 @@
 
 <body>
     <section class="header">
-        <nav class="navbar navbar-expand-md bg-light">
+        <nav class="navbar navbar-expand-md bg-light fixed-top">
             <div class="container-fluid ">
                 <div class="img-header">
-                    <img src="./images/logo-sem-fundo.png" alt="Boa saude" width="170">
+                    <a href="#">
+                        <img src="./images/logo-sem-fundo.png" alt="Boa saude" width="170">
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +27,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nós</a>
+                            <a class="nav-link" href="#section-plan">Convênios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Planos</a>
+                            <a class="nav-link" href="#section-specialty">Especialidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#section-about">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-contact">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +68,7 @@
             </button>
         </div>
     </section>
-    <section class="container text-center">
+    <section class="container text-center" id="section-plan">
         <section class="plan">
             <div class="plan-title mb-5">
                 <h1>CONVÊNIOS</h1>
@@ -116,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="specialty">
+        <section class="specialty" id="section-specialty">
             <div class="specialty-title mb-5">
                 <h1>ESPECIALIDADES</h1>
             </div>
@@ -150,7 +155,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="section-about">
             <div class="about-title mb-5">
                 <h1>SOBRE NÓS</h1>
             </div>
@@ -213,7 +218,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="section-contact">
             <div class="contact-title mb-5">
                 <h1>Contato</h1>
             </div>
@@ -230,7 +235,9 @@
                         <strong>MARQUE SUA CONSULTA!</strong>
                         <div class="button-contact mt-4">
                             <button class="btn btn-success w-100">
-                                <box-icon type='logo' color="#fff" class="whatsapp" name='whatsapp'></box-icon>(71) 99999-9999
+                                <box-icon type='logo' animation='tada' color="#fff" class="whatsapp" name='whatsapp'>
+                                </box-icon>(71)
+                                99999-9999
                             </button>
                         </div>
                     </div>
@@ -249,12 +256,30 @@
             </div>
         </section>
     </section>
-
+    <section class="footer">
+        <div class="footer-image">
+            <a href="#">
+                <img src="./images/logo-sem-fundo.png" alt="Boa saude" width="170">
+            </a>
+        </div>
+        <div class="footer-address">
+            <p>Avenida Cardeal Avelar Brandão Villela, Edf. Oliveira Trade Center. Torre norte</p>
+            <p>Salas: 500/501/502/503 Mata Escura - Cep: 41219-600. Salvador/Bahia/Brasil.</p>
+        </div>
+        <div class="footer-icon ">
+            <box-icon type='logo' color="#fff" name='facebook-circle'></box-icon>
+            <box-icon name='instagram' color="#fff" type='logo'></box-icon>
+        </div>
+    </section>
+    <section class="developers">
+        <p>Desenvolvido com <box-icon name='heart' type='solid' color="#C01616" animation='flashing'></box-icon>
+            por: <strong>Iramar Oliveira - Bruno Tito</strong>
+        </p>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
