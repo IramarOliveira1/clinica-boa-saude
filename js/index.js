@@ -37,7 +37,7 @@ $('#form-send-mail').submit((e) => {
     }
 
     const to = [{
-        email: "castelerda@vusra.com",
+        email: "iramaroliveira1@hotmail.com",
         name: "Boa Saúde",
     }];
 
