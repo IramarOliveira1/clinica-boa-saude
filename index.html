@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica boa saúde</title>
     <link rel="stylesheet" href="css/global.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -27,6 +28,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="nav">
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#section-plan">Convênios</a>
                         </li>
                         <li class="nav-item">
@@ -44,16 +48,13 @@
         </nav>
     </section>
     <section class="carousel main">
-        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./images/carousel-1.jpg" class="d-block w-100" alt="imagem carousel 1">
+                <div class="carousel-item active img-one " data-bs-interval="3000">
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./images/carousel-2.jpg" class="d-block w-100" alt="imagem carousel 2">
+                <div class="carousel-item active img-two " data-bs-interval="3000">
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./images/carousel-3.jpg" class="d-block w-100" alt="imagem carousel 3">
+                <div class="carousel-item active img-three " data-bs-interval="3000">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -80,7 +81,12 @@
                         saúde para que você possa tomar a melhor decisão na hora de contratar.
                     </p>
                     <div class="button-contact-plan">
-                        <button class="btn btn-success">ENTRE EM CONTATO COM A GENTE</button>
+                            <a class="nav-link" href="#section-contact">
+                                <button class="btn btn-success">
+                                    ENTRE EM CONTATO COM A GENTE
+                                </button>
+                            </a>
+                        </a>
                     </div>
                 </div>
                 <div class="plan-imagens">
@@ -159,24 +165,11 @@
             <div class="about-title mb-5">
                 <h1>SOBRE NÓS</h1>
             </div>
-            <div class="text-about">
+            <div class="text-about text-start">
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum rerum illo inventore ipsa
-                    accusantium,
-                    explicabo quod voluptatibus dolorem est. Nobis ducimus numquam officiis voluptas ad in dignissimos
-                    non
-                    sint et!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt harum at obcaecati corrupti
-                    vitae!
-                    Quidem, rerum ut cupiditate fugit, dicta quaerat necessitatibus nemo corrupti non itaque eius maxime
-                    officia temporibus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dicta suscipit numquam odit quasi
-                    odio
-                    incidunt totam earum rerum culpa, aliquid enim velit eaque possimus ducimus optio. Ratione,
-                    consequatur
-                    vitae.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore blanditiis assumenda similique
-                    quia
+                    Fundada em 2022, a clinica boa saúde oferece a seus pacientes serviços nas especialidades de
+                    cardiologia, angiologia, nutrição, arritmologia e avaliação de marcapasso, clínica médica e
+                    endocrinologia, de forma integrada.
                 </p>
             </div>
             <div class="card-general d-md-flex">
@@ -185,10 +178,10 @@
                         <h5>Missão</h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident porro repellendus quidem
-                            tenetur repellat odit, consectetur sed optio ex nostrum molestiae, quaerat quibusdam hic?
-                            Minima ad molestias quia quibusdam ex!
+                        <p class="card-text text-start">
+                            Oferecer aos pacientes e familiares a gestão de saúde e bem estar com excelência, humanidade
+                            e sustentabilidade, acompanhando os avanços científicos e contribuindo para a melhoria da
+                            qualidade de vida.
                         </p>
                     </div>
                 </div>
@@ -198,9 +191,10 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iure delectus, laudantium
-                            quidem aspernatur aut suscipit officiis dignissimos quos ipsum cupiditate aliquid ipsam modi
-                            ut enim natus illo neque vero?
+                            Ser reconhecida como uma clínica de excelência na gestão do conhecimento e compromisso com a
+                            vida,
+                            Respeitar o ser humano e dispensar os esforços necessários para
+                            tratá-lo com a dignidade que merece.
                         </p>
                     </div>
                 </div>
@@ -210,9 +204,9 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id repellendus cum fuga?
-                            Incidunt ipsa, corrupti laudantium, quos rerum sed maiores totam ipsum perferendis maxime
-                            reiciendis, enim libero commodi dignissimos.
+                            Excelência: busca contínua de recursos disponíveis para atender aos pacientes e familiares.
+                            Humanização: atendimento individualizado e com respeito ao bem- estar de pacientes,
+                            familiares e corpo clínico.
                         </p>
                     </div>
                 </div>
@@ -234,22 +228,38 @@
                         </div>
                         <strong>MARQUE SUA CONSULTA!</strong>
                         <div class="button-contact mt-4">
-                            <button class="btn btn-success w-100">
-                                <box-icon type='logo' animation='tada' color="#fff" class="whatsapp" name='whatsapp'>
-                                </box-icon>(71)
-                                99999-9999
-                            </button>
+                            <a href="https://wa.me/71991106181/?text=Seja Bem-vindo a clinica boa saúde seu portal de marcação de consulta!"
+                                target="_blank">
+                                <button class="btn btn-success w-100">
+                                    <box-icon type='logo' animation='tada' color="#fff" class="whatsapp"
+                                        name='whatsapp'>
+                                    </box-icon>
+                                    (71) 99999-9999
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
                     <div class="col-md-12">
-                        <form>
-                            <input type="text" class="form-control" placeholder="Nome" required>
-                            <input type="text" class="form-control" placeholder="Telefone" required>
-                            <input type="email" class="form-control" placeholder="Email" required>
-                            <textarea class="form-control mb-3" rows="3" placeholder="Mensagem" required></textarea>
-                            <button class="btn btn-primary w-100">Enviar mensagem</button>
+                        <form id="form-send-mail">
+                            <input type="text" class="form-control" placeholder="Nome" required name="name">
+                            <input type="text" class="form-control" placeholder="Telefone" required name="tel">
+                            <input type="email" class="form-control" placeholder="Email" required name="email">
+                            <select class="form-control mb-3" name="subject" required>
+                                <option value="">SELECIONE</option>
+                                <option value="Parcerias">Parcerias</option>
+                                <option value="Convênios">Convênios</option>
+                                <option value="Dúvidas Marcação de consultas">Dúvidas sobre Marcação de consultas
+                                </option>
+                                <option value="Dúvidas sobre Especialidades">Dúvidas sobre Especialidades</option>
+                                <option value="Sugestões para nosso site">Sugestões para nosso site</option>
+                            </select>
+                            <textarea class="form-control mb-1" rows="7" placeholder="Descrição, máximo 500 caracteres."
+                                required name="description" maxlength="500">
+                            </textarea>
+                            <legend class="text-start"></legend>
+                            <button class="btn btn-primary w-100" id="send-mail">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>
@@ -273,7 +283,9 @@
     </section>
     <section class="developers">
         <p>Desenvolvido com <box-icon name='heart' type='solid' color="#C01616" animation='flashing'></box-icon>
-            por: <strong>Iramar Oliveira - Bruno Tito</strong>
+            <strong>&&</strong>
+            🍺
+            por: <strong>Iramar Capim && Bruno Tito</strong>
         </p>
     </section>
 
@@ -282,6 +294,14 @@
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
