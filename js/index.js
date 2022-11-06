@@ -31,7 +31,7 @@ $('#form-send-mail').submit((e) => {
     const headers = {
         Accept: "application/json",
         "Content-Type": 'application/json',
-        "api-key": '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',
+        "api-key": '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',
         "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
         charset: "iso-8859-1"
     }
