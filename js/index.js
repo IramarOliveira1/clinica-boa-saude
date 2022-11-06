@@ -27,13 +27,12 @@ $('#form-send-mail').submit((e) => {
     const greetings = getGreetings();
 
     const url = 'https://api.sendinblue.com/v3/smtp/email';
-    const api_key = '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';
+    const api_key = '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';
 
     const headers = {
         Accept: "application/json",
         "Content-Type": 'application/json',
-        "api-key": api_key,
-        "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
+        "api-key": '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',
         charset: "iso-8859-1"
     }
 
@@ -52,7 +51,7 @@ $('#form-send-mail').submit((e) => {
     }
 
     const sender = {
-        email: '"mazinholiveira5@gmail.com'
+        email: $('input[name=email]').val(),
     };
 
     const data = {
