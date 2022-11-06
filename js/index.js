@@ -12,31 +12,17 @@ $('textarea[name=description]').keyup(() => {
     $('legend').html(`${count}/500`);
 });
 
+
 $('#form-send-mail').submit((e) => {
     e.preventDefault();
-
-    // const testando = {
-    //     name: $('input[name=name]').val(),
-    //     tel: $('input[name=tel]').val(),
-    //     email: $('input[name=email]').val(),
-    //     subject: $('select[name=subject]').val(),
-    //     description: $('textarea[name=description]').val(),
-    // }
-
-    const date = {
-        from: 'testando@teste.com',
-        to: 'iramaroliveira1@hotmail.com',
-        subject: 'testnado sendmail',
-        text: 'olá mundo chegamos'
-    };
-
+    
+    
     const formData = new FormData();
-
 
     formData.append('from', 'Excited User nartozetri@gufum.com')
     formData.append('to', 'iramaroliveira1@hotmail.com')
     formData.append('subject', 'testando')
-    formData.append('text', 'testando agora vai ahahahahahahahah')
+    formData.append('text', 'iramar testando email')
 
 
 
@@ -48,7 +34,7 @@ $('#form-send-mail').submit((e) => {
         processData: false,
         contentType: false,
         headers: {
-            Authorization: "Basic " + btoa('api' + ":" + 'aa9648489e35a8d9faff21a2775cf4d5-31eedc68-bb4eb5af')
+            Authorization: "Basic " + btoa('api' + ":" + apikey())
         }
     }).then((response) => {
         console.log(response);
