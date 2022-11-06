@@ -15,34 +15,30 @@ $('textarea[name=description]').keyup(() => {
 
 $('#form-send-mail').submit((e) => {
     e.preventDefault();
-    
-    
-    const formData = new FormData();
+    // const formData = new FormData();
 
-    formData.append('from', 'Excited User nartozetri@gufum.com')
-    formData.append('to', 'iramaroliveira1@hotmail.com')
-    formData.append('subject', 'testando')
-    formData.append('text', 'iramar testando email')
+    // formData.append('from', 'Excited User nartozetri@gufum.com')
+    // formData.append('to', 'iramaroliveira1@hotmail.com')
+    // formData.append('subject', 'testando')
+    // formData.append('text', 'iramar testando email')
 
+    // $.ajax({
+    //     type: "POST",
+    //     url: "https://api.mailgun.net/v3/sandbox10131020328d4b8f9050933c25785add.mailgun.org/messages",
+    //     data: formData,
+    //     cache: false,
+    //     processData: false,
+    //     contentType: false,
+    //     headers: {
+    //         Authorization: "Basic " + btoa('api' + ":" + apikey())
+    //     }
+    // }).then((response) => {
+    //     console.log(response);
+    // }).catch((error) => {
+    //     console.log(error);
+    // });
 
-
-    $.ajax({
-        type: "POST",
-        url: "https://api.mailgun.net/v3/sandbox10131020328d4b8f9050933c25785add.mailgun.org/messages",
-        data: formData,
-        cache: false,
-        processData: false,
-        contentType: false,
-        headers: {
-            Authorization: "Basic " + btoa('api' + ":" + apikey())
-        }
-    }).then((response) => {
-        console.log(response);
-    }).catch((error) => {
-        console.log(error);
-    });
-
-    return
+    // return
 
     Swal.fire({
         icon: "info",
@@ -60,7 +56,7 @@ $('#form-send-mail').submit((e) => {
     const headers = {
         Accept: "application/json",
         "Content-Type": 'application/json',
-        "api-key": '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',
+        "api-key": apikey(),
         "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
         charset: "iso-8859-1"
     }
