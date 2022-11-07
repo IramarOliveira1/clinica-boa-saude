@@ -134,28 +134,57 @@
             <div class="specialty-images">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <img src="images/cardiologia.webp" alt="Cardiologia">
+
+                        <img src="images/cardiologia.webp" alt="Cardiologia" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-title="Cardiologia é a especialidade médica que se ocupa do diagnóstico e tratamento
+                            das doenças que acometem o coração bem como os outros componentes do sistema circulatório.">
                         <label for="">Cardiologia</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/angiologia.webp" alt="Angiologia">
+                        <img src="/images/angiologia.webp" alt="Angiologia" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="A angiologia é a área da medicina que se dedica a prevenir, diagnosticar e tratar
+                            todas as doenças relacionadas ao sistema circulatório. Mais especificamente,
+                            os vasos linfáticos e os vasos sanguíneos (artérias e veias).">
                         <label for="">Angiologia</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/foto_nutricao.webp" alt="Nutrição">
+                        <img src="/images/foto_nutricao.webp" alt="Nutrição" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="Nutrição é a especialidade da medicina que estuda o papel dos nutrientes no organismo 
+                            e as necessidades nutricionais do ser humano.">
                         <label for="">Nutrição</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <img src="/images/Arritmologia-e-Avaliação-de-Marcapasso.webp"
-                            alt="Arritmologia e Avaliação de Marcapasso">
+                            alt="Arritmologia e Avaliação de Marcapasso" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="A Arritmologia é uma subespecialização da Cardiologia,
+                            que trata especificamente de arritmias (distúrbios elétricos do coração).
+                            O sintoma mais comum são palpitações, contudo as arritmias podem não ocasionar qualquer sintoma ou, 
+                            pelo contrário, associarem-se a manifestações com significado potencialmente mais preocupante como 
+                            sudorese, palidez, tonturas, desmaios (síncope) e até mesmo parada cardíaca.">
                         <label for="">Arritmologia e Avaliação de Marcapasso</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/clinica_medica.webp" alt="Clínica Médica">
+                        <img src="/images/clinica_medica.webp" alt="Clínica Médica" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="Os constantes avanços das pesquisas na área médica têm provocado uma crescente
+                                especialização de seus profissionais, enfocando aspectos cada vez mais específicos do organismo humano.
+                                Se isso, por um lado, traz progresso na pesquisa científica e no tratamento das doenças, por outro,
+                                gera grande dúvida aos pacientes. Se quiserem procurar diretamente um especialista,
+                                vão ter que fazer algumas “suspeições e diagnósticos” por conta própria,
+                                o que obviamente nem sempre estará correto. Procurar um clínico geral inicialmente 
+                                para esclarecer seus sintomas, sempre está certo. O clínico geral, tem uma visão global do organismo
+                                humano e deve estar preparado para proceder aos diversos diagnósticos.">
                         <label for="">Clínica Médica</label>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="/images/endocrinologia.webp" alt="Endocrinologia">
+                        <img src="/images/endocrinologia.webp" alt="Endocrinologia" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-title="O Endocrinologista é o médico que cuida dos transtornos das glândulas endócrinas. 
+                            As glândulas endócrinas são órgãos que secretam substâncias no sangue, conhecidas como hormônios.
+                            A Endocrinologia visa reconhecer e tratar os problemas com esses hormônios,
+                            ajudando a restabelecer o equilíbrio do organismo. O campo de atuação do endocrinologista 
+                            é extremamente vasto, visto que os hormônios regulam praticamente todas as funções orgânicas,
+                            e portanto as alterações hormonais podem provocar diversas doenças, envolvendo o organismo como um todo.">
                         <label for="">Endocrinologia</label>
                     </div>
                 </div>
@@ -228,7 +257,7 @@
                         </div>
                         <strong>MARQUE SUA CONSULTA!</strong>
                         <div class="button-contact mt-4">
-                            <a href="https://wa.me/71991106181/?text=Seja Bem-vindo a clinica boa saúde seu portal de marcação de consulta!"
+                            <a href="https://wa.me/+5571991106181/?text=Seja Bem-vindo a clinica boa saúde!"
                                 target="_blank">
                                 <button class="btn btn-success w-100">
                                     <box-icon type='logo' animation='tada' color="#fff" class="whatsapp"
@@ -247,7 +276,7 @@
                             <input type="text" class="form-control" placeholder="Telefone" name="tel" required>
                             <input type="email" class="form-control" placeholder="Email" name="email" required>
                             <select class="form-control mb-3" name="subject" required>
-                                <option value="">SELECIONE</option>
+                                <option value="">SELECIONE UM ASSSUNTO</option>
                                 <option value="Parcerias">Parcerias</option>
                                 <option value="Convênios">Convênios</option>
                                 <option value="Dúvidas Marcação de consultas">Dúvidas sobre Marcação de consultas
@@ -259,7 +288,7 @@
                                 name="description" maxlength="500" required>
                             </textarea>
                             <legend class="text-start"></legend>
-                            <button class="btn btn-primary w-100" id="send-mail">Enviar mensagem</button>
+                            <button class="btn btn-primary w-100" id="send-mail" disabled>EM MANUTENÇÃO</button>
                         </form>
                     </div>
                 </div>
@@ -289,21 +318,24 @@
         </p>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <script src="  https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="./js/apikey.js"></script>
     <script src="./js/index.js"></script>
-
 </body>
 
 </html>
