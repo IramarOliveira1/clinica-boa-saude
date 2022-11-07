@@ -15,7 +15,6 @@ $('textarea[name=description]').keyup(() => {
     $('legend').html(`${count}/500`);
 });
 
-
 $('#form-send-mail').submit((e) => {
     e.preventDefault();
 
@@ -35,14 +34,14 @@ $('#form-send-mail').submit((e) => {
     const headers = {
         Accept: "application/json",
         "Content-Type": 'application/json',
-        "api-key": '',
+        "api-key": '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',
         "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
         charset: "iso-8859-1"
     }
 
     const to = [{
         email: "iramaroliveira1@hotmail.com",
-        name: "Boa Saúde",
+        name: "Clinica Boa Saúde",
     }];
 
     const params = {
