@@ -31,37 +31,23 @@ $('#form-send-mail').submit((e) => {
 
     const url = 'https://api.sendinblue.com/v3/smtp/email';
 
-    const headers = {
-        Accept: "application/json",
-        "Content-Type": 'application/json',
-        "api-key": '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',
-        "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
-        charset: "iso-8859-1"
-    }
-
-    const to = [{
-        email: "iramaroliveira1@hotmail.com",
-        name: "Clinica Boa Saúde",
-    }];
-
-    const params = {
-        name: $('input[name=name]').val(),
-        tel: $('input[name=tel]').val(),
-        email: $('input[name=email]').val(),
-        subject: $('select[name=subject]').val(),
-        description: $('textarea[name=description]').val(),
-        greetings: greetings
-    }
-
-    const sender = {
-        email: $('input[name=email]').val(),
-    };
-
     const data = {
-        sender: sender,
-        to: to,
-        params: params,
-        templateId: 1
+        sender: {
+            email: $('input[name=email]').val()
+        },
+        to: [{
+            email: "iramaroliveira1@hotmail.com",
+            name: "Clinica Boa Saúde",
+        }],
+        params: {
+            name: $('input[name=name]').val(),
+            tel: $('input[name=tel]').val(),
+            email: $('input[name=email]').val(),
+            subject: $('select[name=subject]').val(),
+            description: $('textarea[name=description]').val(),
+            greetings: greetings
+        },
+        templateId: 1,
     };
 
     setTimeout(() => {
@@ -69,7 +55,13 @@ $('#form-send-mail').submit((e) => {
             type: "POST",
             url: url,
             data: JSON.stringify(data),
-            headers: headers,
+            headers: {
+                Accept: "application/json",
+                "Content-Type": 'application/json',
+                "api-key": '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',
+                "X-Mailin-custom": "custom_header_1:custom_value_1|custom_header_2:custom_value_2|custom_header_3:custom_value_3",
+                charset: "iso-8859-1"
+            },
         }).then(() => {
             Swal.close();
 
