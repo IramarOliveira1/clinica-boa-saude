@@ -142,6 +142,10 @@ section {
 .specialty-images label {
     color: #7EABD4;
 }
+.box-plan-radio label{
+    display: block;
+    margin-bottom: 20px;
+}
 
 .contact-info {
     text-align: left;

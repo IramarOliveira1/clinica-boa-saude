@@ -2,7 +2,19 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 $(document).ready(() => {
-    $('input[name=tel]').mask('(00) 00000-0000')
+    $('input[name=tel]').mask('(00) 00000-0000');
+    $('.box-plan-radio').hide();
+});
+
+$('select[name=subject]').change(function (e) { 
+    e.preventDefault();
+
+    $('.box-plan-radio').hide();
+    if ($('select[name=subject]').val() === 'Convênios') {
+        $('.box-plan-radio').show();
+    }
+    
+    
 });
 
 $('textarea[name=description]').val('');
