@@ -3,26 +3,25 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 $(document).ready(() => {
     $('input[name=tel]').mask('(00) 00000-0000');
-    $('.box-plan-radio').hide();
+    $('.box-plan-checkbox').hide();
+    $('textarea[name=description]').val('');
+    $('legend').html('0/500');
 });
 
-$('select[name=subject]').change(function (e) { 
+$('select[name=subject]').change(function (e) {
     e.preventDefault();
 
-    $('.box-plan-radio').hide();
+    $('.box-plan-checkbox').hide();
+
+    $('.form-check-input').prop('checked', false);
+
     if ($('select[name=subject]').val() === 'Convênios') {
-        $('.box-plan-radio').show();
+        $('.box-plan-checkbox').show();
     }
-    
-    
 });
 
-$('textarea[name=description]').val('');
-$('legend').html('0/500');
-
-
 $('textarea[name=description]').keyup(() => {
-    let count = $('textarea[name=description]').val().length
+    let count = $('textarea[name=description]').val().length;
 
     $('legend').html(`${count}/500`);
 });
@@ -30,14 +29,25 @@ $('textarea[name=description]').keyup(() => {
 $('#form-send-mail').submit((e) => {
     e.preventDefault();
 
+    if ($('select[name=subject]').val() === 'Convênios' && $('.form-check-input:checked').length === 0) {
+        Swal.fire({
+            icon: "warning",
+            title: "Campo obrigatório",
+            text: "Selecione ao menos um Convênio!",
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+        });
+        return;
+    }
+
     Swal.fire({
         icon: "info",
         title: "Aguarde",
         text: "Enviando email...",
         allowEscapeKey: false,
         allowOutsideClick: false,
-    })
-    Swal.showLoading()
+    });
+    Swal.showLoading();
 
     const greetings = getGreetings();
 
@@ -57,6 +67,16 @@ $('#form-send-mail').submit((e) => {
             email: $('input[name=email]').val(),
             subject: $('select[name=subject]').val(),
             description: $('textarea[name=description]').val(),
+            plan: {
+                bradesco: $('input[name=bradesco]:checked').val(),
+                hapvida: $('input[name=hapvida]:checked').val(),
+                amil: $('input[name=amil]:checked').val(),
+                unimed: $('input[name=unimed]:checked').val(),
+                sulamerica: $('input[name=sulamerica]:checked').val(),
+                saudecasseb: $('input[name=saudecasseb]:checked').val(),
+                qualicorp: $('input[name=qualicorp]:checked').val(),
+                smilesaude: $('input[name=smilesaude]:checked').val(),
+            },
             greetings: greetings
         },
         templateId: 1,
@@ -88,6 +108,7 @@ $('#form-send-mail').submit((e) => {
             $('#form-send-mail').trigger('reset');
             $('textarea[name=description]').val('');
             $('legend').html('0/500');
+            $('.box-plan-checkbox').hide();
         }).catch(() => {
             Swal.close();
 

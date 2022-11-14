@@ -142,7 +142,7 @@ section {
 .specialty-images label {
     color: #7EABD4;
 }
-.box-plan-radio label{
+.box-plan-checkbox label{
     display: block;
     margin-bottom: 20px;
 }
